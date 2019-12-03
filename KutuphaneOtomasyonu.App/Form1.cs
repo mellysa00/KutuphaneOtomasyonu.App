@@ -21,7 +21,7 @@ namespace KutuphaneOtomasyonu.App
         private void btnGiris_Click(object sender, EventArgs e)
         {
             KitapAra ka = new KitapAra();
-            Form1 frm = new Form1();
+         
 
 
             if (txtAd.Text=="melisa" && txtSifre.Text=="2009")

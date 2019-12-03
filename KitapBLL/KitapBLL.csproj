@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2CFF9F6-0CA7-45BF-9C35-7C3C44CEB7BA}</ProjectGuid>
+    <ProjectGuid>{BD95748D-4EAD-4B03-B51C-B324FB0FEF03}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MODEL</RootNamespace>
-    <AssemblyName>MODEL</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>KitapBLL</RootNamespace>
+    <AssemblyName>KitapBLL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -41,9 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Kitap.cs" />
-    <Compile Include="Kullanici.cs" />
+    <Compile Include="KitapBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KitapDAL\KitapDAL.csproj">
+      <Project>{9de30c6d-a625-4d55-8a02-edbb182b3d2c}</Project>
+      <Name>KitapDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.csproj">
+      <Project>{b2cff9f6-0ca7-45bf-9c35-7c3c44ceb7ba}</Project>
+      <Name>MODEL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
